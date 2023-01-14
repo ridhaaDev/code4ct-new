@@ -21,41 +21,38 @@ function onVisible(element, callback) {
   }).observe(element);
 }
 
+const handleCountUp = () => {
+  let timeLeftForCoffee = 2500;
+  let timeLeftForGirls = 280;
+  let timeLeftForProjects = 2680;
+  let timeLeftForHours = 8265;
+
+  let timerEl1 = document.getElementById("counter-1");
+  let timerEl2 = document.getElementById("counter-2");
+  let timerEl3 = document.getElementById("counter-3");
+  let timerEl4 = document.getElementById("counter-4");
+
+  let timer = setInterval(() => {
+    timerEl1.innerHTML = timeLeftForCoffee;
+    timerEl2.innerHTML = timeLeftForGirls;
+    timerEl3.innerHTML = timeLeftForProjects;
+    timerEl4.innerHTML = timeLeftForHours;
+
+    if (timeLeftForCoffee === 3000) {
+      clearInterval(timer);
+      timerEl1.innerHTML = "3000+";
+      timerEl2.innerHTML = "780+";
+      timerEl3.innerHTML = "3120+";
+      timerEl4.innerHTML = "8765+";
+    }
+    timeLeftForGirls++;
+    timeLeftForCoffee++;
+    timeLeftForProjects++;
+    timeLeftForHours++;
+  }, 1);
+}
+
 // Move counter section
 onVisible(element, () => {
-  console.log("Obs");
-  // const startValues = new Map()
-  // endValues.set("counter-1", 0)
-  // endValues.set("counter-2", 0)
-  // endValues.set("counter-3", 0)
-  // endValues.set("counter-4", 0)
-
-  const endValues = new Map()
-  endValues.set("counter-1", 3000)
-  endValues.set("counter-2", 780)
-  endValues.set("counter-3", 3120)
-  endValues.set("counter-4", 8765)
-
-  const elArr = [
-    document.getElementById("counter-1"),
-    document.getElementById("counter-2"),
-    document.getElementById("counter-3"),
-    document.getElementById("counter-4")
-  ]
-
-  for (const el of elArr) {
-    const id = el.getAttribute("id");
-
-    el.value += Number(el.value) + 1;
-
-    console.log(el.value);
-    if (el.value >= endValues.get(id)) {
-      continue;
-    }
-
-    setTimeout(20)
-  }
-
-
-
+  handleCountUp()
 });

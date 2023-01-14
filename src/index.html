@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../dist/output.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+            integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+
+        <script src="js/script.js" defer></script>
+        <title>Code4CT</title>
+    </head>
+
+    <body>
+
+        <!-- Navbar section -->
+        <nav class="flex bg-white justify-between fixed w-full h-[80px] drop-shadow-md z-50">
+            <img src="images/code4ct-logo-1.jpg" alt="" class="h-[60px] inline-block self-center mx-3" />
+
+            <div class="hidden h-[60px] md:flex leading-[5rem] space-x-5">
+                <a href="#home" class="navLink" id="active">Home</a>
+                <a href="about.html" class="navLink">About</a>
+                <div>
+                    <button class="dropbtn">Courses<i class="fa fa-caret-down"></i></button>
+                    <div class="hidden">
+                        <a href="courses.html">Our Courses</a>
+                        <a href="#">Curriculum</a>
+                    </div>
+                </div>
+                <a href="portfolio.html" class="navLink">Portfolio</a>
+                <a href="contact.html" class="navLink">Contact</a>
+            </div>
+
+            <!-- Hamburger -->
+            <button id="menu-btn" class="flex self-center hamburger md:hidden focus:outline-none ">
+                <span class="hamburger-top"></span>
+                <span class="hamburger-middle"></span>
+                <span class="hamburger-bottom"></span>
+            </button>
+
+            <!-- Mobile Menu -->
+            <div class="md:hidden">
+                <div id="menu"
+                    class="absolute flex-col items-center hidden self-end py-8 mt-[6em] space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
+                    <a href="#home" class="navLink" id="active">Home</a>
+                    <a href="about.html" class="navLink">About</a>
+                    <div>
+                        <button class="dropbtn">Courses<i class="fa fa-caret-down"></i></button>
+                        <div class="hidden">
+                            <a href="courses.html">Our Courses</a>
+                            <a href="#">Curriculum</a>
+                        </div>
+                    </div>
+                    <a href="portfolio.html" class="navLink">Portfolio</a>
+                    <a href="contact.html" class="navLink">Contact</a>
+                </div>
+            </div>
+
+            <!-- Search -->
+            <div class="hidden p-2 rounded md:flex self-center mx-3 border-solid border-2 border-black">
+                <input type="search" placeholder="Search..." class="outline-none focus:outline-none min-w-3em">
+                <button id="searchButton"><i class="fas fa-search"></i></button>
+            </div>
+        </nav>
+
+        <main class="absolute top-[5em]">
+            <!-- header section -->
+            <section id="header"
+                class="z-10 w-full text-white bg-home-bg bg-no-repeat object-none min-h-[50vh] xl:min-h-[90vh] p-10 xl:px-[400px] xl:py-[200px]">
+
+                <!-- Overlay -->
+                <div class="bg-slate-500 p-10">
+                    <h2 class="text-3xl">Code for Cape Town</h2>
+                    <p>We want to see young women empowered to leverage technology for social innovation, so that
+                        there
+                        is
+                        greater diversity in the African tech industry. We want high school girls to have an
+                        enabling
+                        environment to imagine
+                    </p>
+                    <button>READ MORE</button>
+                    <button>START CODING</button>
+                </div>
+            </section>
+
+            <section id="who-we-are" class="p-3 w-full block lg:px-[200px] lg:py-[100px]">
+                <!-- Text and Images -->
+                <div class="block lg:flex">
+
+                    <div class="w-full lg:w-1/2 space-y-4">
+                        <!-- Heading section -->
+                        <div>
+                            <h1 class="text-2xl font-bold">Who we are?</h1>
+
+                            <div class="h-[5px] w-[200px] flex">
+                                <div class="bg-red-600 w-[20%] h-[100%]"></div>
+                                <div class="bg-slate-500 w-[80%] h-[100%]"></div>
+                            </div>
+                        </div>
+                        <p class="font-bold">
+                            Code for Cape Town (Code4CT) is a programme that introduces young girls to basic web
+                            building
+                            skills and exposes them to
+                            opportunities in the Information and Communication Technologies (ICT) sector.
+                        </p>
+                        <p>Participants are trained in web development, design principles, as well as courses in
+                            professional development. Code4CT
+                            aims to inspire a generation of young girls who are well-prepared with a toolkit of
+                            technical
+                            and soft skills in order
+                            to achieve high impact in the workplace.</p>
+                        <p>
+                            These are skills that everyone should have. Even if you have no intention of becoming a
+                            professional coder, you will
+                            benefit from knowing how to think in this way in this increasingly computerized economy. A
+                            growing number of permanent
+                            job positions that use information technology to deliver a product or a service are becoming
+                            available in the local
+                            economy. It is estimated that nearly 75000 such jobs will come online in South Africa within
+                            the
+                            next five years.
+                        </p>
+                        <button class="border border-slate-400 py-1 px-4 rounded-lg text-slate-400">Read More</button>
+                    </div>
+                    <div class="mt-10 lg:w-1/2 lg:grid lg:grid-cols-2 lg:gap-4 lg:p-10 lg:mt-1">
+                        <img src="images/aboutPreview.jpg" alt="" class="rounded-lg">
+                        <img src="images/aboutPreview.jpg" alt="" class="rounded-lg">
+                        <img src="images/aboutPreview.jpg" alt="" class="rounded-lg">
+                        <img src="images/aboutPreview.jpg" alt="" class="rounded-lg">
+                    </div>
+                </div>
+            </section>
+
+            <section id="skills-learning"
+                class="w-full text-center flex flex-col bg-black text-white p-4 lg:px-[200px] lg:py-[100px] lg:flex-row">
+                <div>
+                    <img src="images/computerImage.png" alt="" class="max-w-[150px] mx-auto">
+                    <h3 class="font-bold mt-2">Coding</h3>
+                    <p class="p-1">Learn how to build your own websites using HTML, CSS, JavaScript & JQuery. Go on to
+                        explore
+                        exciting modules from game
+                        development to user experience design.</p>
+                </div>
+
+                <div>
+                    <img src="images/volumeImage.png" alt="" class="max-w-[150px] mx-auto">
+                    <h3 class="font-bold mt-2">Communication</h3>
+                    <p class="p-1">Learn how to pitch ideas, represent yourself online, communicate professionally and
+                        work with
+                        online collaboration
+                        tools.</p>
+                </div>
+                <div>
+                    <img src="images/toolsImage.png" alt="" class="max-w-[150px] mx-auto">
+                    <h3 class="font-bold mt-2">Problem Solving</h3>
+                    <p class="p-1">
+                        Apply your coding skills to issues you are interested in. You will learn how to tackle complex
+                        problems using the design
+                        thinking process.
+                    </p>
+                </div>
+
+                <div>
+                    <img src="images/certificateImage.png" alt="" class="max-w-[150px] mx-auto">
+                    <h3 class="font-bold mt-2">Career Guidance</h3>
+                    <p class="p-1">Explore future options by meeting different companies doing exciting things with
+                        technology. We
+                        offer career testing and
+                        connect you to our network of study institutions and bursary programs.</p>
+                </div>
+            </section>
+
+            <!-- Our awesome portfolio -->
+            <section id="our-awesome-portfolio" class="p-4 lg:px-[200px] lg:py-[100px]">
+                <div>
+                    <h1 class="text-2xl font-bold">Our awesome portfolio</h1>
+
+                    <div class="h-[5px] w-[200px] flex">
+                        <div class="bg-red-600 w-[20%] h-[100%]"></div>
+                        <div class="bg-slate-500 w-[80%] h-[100%]"></div>
+                    </div>
+
+                    <p class="py-2">
+                        Over the past 3 years, Code for Cape Town has reached over 600 young women with coding and
+                        social innovation. Not only
+                        have they been exposed to coding but they have also done careers and life skills courses, design
+                        thinking workshops and
+                        social innovation projects to address local challenges.
+                    </p>
+
+                    <!-- Images container -->
+                    <div class="lg:grid lg:grid-cols-2 lg:gap-2">
+                        <!-- four images -->
+                        <div class="space-y-3 lg:grid lg:grid-cols-2 lg:gap-2 lg:space-y-0">
+                            <img src="images/portfolio9.JPG" alt="" class="rounded-lg">
+                            <img src="images/portfolio8.JPG" alt="" class="rounded-lg">
+                            <img src="images/portfolio3.JPG" alt="" class="rounded-lg">
+                            <img src="images/portfolio4.JPG" alt="" class="rounded-lg">
+                        </div>
+
+                        <!-- one image -->
+                        <div>
+                            <img src="images/portfolio5.JPG" alt="" class="rounded-lg">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Meet our team -->
+            <section id="meet-our-team" class="p-4 lg:px-[200px] lg:py-[100px]">
+                <!-- Heading section -->
+                <div>
+                    <h1 class="text-2xl font-bold">Meet our team</h1>
+
+                    <div class="h-[5px] w-[200px] flex">
+                        <div class="bg-red-600 w-[20%] h-[100%]"></div>
+                        <div class="bg-slate-500 w-[80%] h-[100%]"></div>
+                    </div>
+                </div>
+
+                <p class="p-2">Code4CT is a diverse company made up of strong-minded individuals. Our core team consists
+                    of:</p>
+
+                <!-- 4 People -->
+                <div class="flex flex-wrap xl:grid xl:grid-cols-2 gap-4">
+                    <!-- person 1 -->
+                    <div class="flex flex-col lg:flex-row lg:gap-4">
+                        <img src="images/person1.jpg" alt="" class="max-w-[250px] rounded-lg">
+                        <div class="max-w-[200px]">
+                            <h2 class="text-xl font-bold">Emma Dicks</h2>
+                            <p class="italic">Founder and Director</p>
+                            <p>Emma is passionate about providing high quality education that enables young people to
+                                bring innovative ideas to life
+                                and play an active role in South Africa's economy.</p>
+                        </div>
+                    </div>
+                    <!-- person 2 -->
+                    <div class="flex flex-col lg:flex-row lg:gap-4">
+                        <img src="images/person2.jpg" alt="" class="max-w-[250px] rounded-lg">
+                        <div class="max-w-[200px]">
+                            <h2 class="text-xl font-bold">Andrea Petersen</h2>
+                            <p class="italic">Operations Lead</p>
+                            <p>Andrea thrives on seeing key players in the Code4CT ecosystem discover how they can make
+                                the greatest impact.When she is
+                                not co-ordinating the Code4CT family she can be found enjoying the diverse cuisine and
+                                great outdoors that Cape Town has
+                                to offer</p>
+                        </div>
+                    </div>
+                    <!-- person 3 -->
+                    <div class="flex flex-col lg:flex-row lg:gap-4">
+                        <img src="images/person3.jpg" alt="" class="max-w-[250px] rounded-lg">
+                        <div class="max-w-[200px]">
+                            <h2 class="text-xl font-bold">Tegan Crous</h2>
+                            <p class="italic">Program Lead</p>
+                            <p>Tegan heads up the high school program. She is spurred on by a heart for people and
+                                seeing them pursue their potential
+                                in a safe, fun and nurturing environment.</p>
+                        </div>
+                    </div>
+                    <!-- person 4 -->
+                    <div class="flex flex-col lg:flex-row lg:gap-4">
+                        <img src="images/person4.jpg" alt="" class="max-w-[250px] rounded-lg">
+                        <div class="max-w-[200px]">
+                            <h2 class="text-xl font-bold">Tracy-Anne Sikenjana</h2>
+                            <p class="italic">Leadership Program Coordinator</p>
+                            <p>Tracy joined in 2015 and matriculated from Rustenburg Girls' High in 2016. She interned
+                                with Code4CT to give back to an
+                                organisation that had a large impact on her personal growth and development.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Counting stats -->
+            <section id="counting-stats" class="w-full h-[400px] bg-black text-white">
+                <div>
+                    <div id="counter-1">0</div>
+                    <div>Cups of coffee</div>
+                </div>
+
+                <div>
+                    <div id="counter-2">0</div>
+                    <div>Number of girls</div>
+                </div>
+
+                <div>
+                    <div id="counter-3">0</div>
+                    <div>Projects completed</div>
+                </div>
+
+                <div>
+                    <div id="counter-4">0</div>
+                    <div>Hours of coding</div>
+                </div>
+            </section>
+        </main>
+
+
+    </body>
+
+</html>

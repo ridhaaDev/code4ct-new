@@ -11,7 +11,11 @@ module.exports = {
     extend: {
       backgroundImage: {
         'home-bg': "url('../src/images/Code4CT-homepage.jpg')"
+      },
+      colors: {
+ primary: "#e38f84"
       }
+
     }
   },
   plugins: [],
